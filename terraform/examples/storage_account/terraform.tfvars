@@ -1,0 +1,5 @@
+resource_group_name      = "test-rg"
+location                 = "centralus"
+storage_account_name     = "mytestingaccount"
+storage_account_tier     = "Standard"
+account_replication_type = "GRS"
