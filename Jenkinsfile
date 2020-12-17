@@ -16,7 +16,7 @@ node {
             azLoginCmd = "${azLoginCmd} --tenant ${AZURE_TENANT_ID}"
             azLoginCmd = "${azLoginCmd} --username ${AZURE_CLIENT_ID}"
             azLoginCmd = "${azLoginCmd} --password ${AZURE_CLIENT_SECRET}"
-
+            echo "checking for $subscriptionId"
             sh("sudo /root/bin/az cloud set --name ${cloudName}")
             sh(azLoginCmd)
             sh("sudo /root/bin/az account set -s ${subscriptionId}")
